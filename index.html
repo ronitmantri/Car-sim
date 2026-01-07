@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Download</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0f172a;
+    color:#fff;
+}
+
+/* ===== Header ===== */
+.header{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+}
+
+.header img{
+    width:120px;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+.header h1{
+    font-size:32px;
+    margin:10px 0;
+}
+
+.header p{
+    max-width:600px;
+    margin:auto;
+    opacity:0.9;
+}
+
+/* ===== Download Button ===== */
+.download-btn{
+    margin-top:25px;
+    padding:15px 40px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:#000;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.download-btn:hover{
+    background:#16a34a;
+}
+
+/* ===== Section ===== */
+.section{
+    padding:40px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* ===== Screenshots ===== */
+.screenshots{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.screenshots img{
+    width:100%;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.screenshots img:hover{
+    transform:scale(1.05);
+}
+
+/* ===== Footer ===== */
+.footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    opacity:0.7;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== Header Area ===== -->
+<div class="header">
+    <!-- Game Logo -->
+    <img src="1766817866974.jpg" alt="Game Logo">
+
+    <!-- Game Name -->
+    <h1>Car Simulator 3d ( 2026 )</h1>
+
+    <!-- Game Description -->
+    <p>
+        This is my amazing car driving game.  
+        Smooth control, realistic sound, and fun gameplay.
+    </p>
+
+    <!-- Download Button -->
+    <button class="download-btn" onclick="downloadGame()">
+        ⬇ Download Game
+    </button>
+</div>
+
+<!-- ===== Screenshots Section ===== -->
+<div class="section">
+    <h2>Game Screenshots</h2>
+
+    <div class="screenshots">
+        <img src="Screenshot_20251227-125809.png">
+        <img src="Screenshot_20251227-125819.png">
+        <img src="Screenshot_20251227-125827.png">
+        <img src="Screenshot_20251227-125835.png">
+    </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<div class="footer">
+    © 2025 Your Game Studio | All Rights Reserved
+</div>
+
+<script>
+function downloadGame(){
+
+    /* 🔽 এখানে শুধু Google Drive FILE ID বসাও */
+    const FILE_ID = "1ywSylH2cpBxkbxNgjHSV_JFxnz2T74AY";
+
+    const downloadURL =
+      "https://drive.google.com/file/d/1ywSylH2cpBxkbxNgjHSV_JFxnz2T74AY/view?usp=drivesdk" + FILE_ID;
+
+    // Direct download
+    window.location.href = downloadURL;
+}
+</script>
+
+</body>
+</html>
